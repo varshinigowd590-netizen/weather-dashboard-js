@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Weather Dashboard</h1>
+    <form id="search-form">
+      <input id="city-input" type="text" placeholder="Enter a city name..." autocomplete="off" required>
+      <button type="submit">Search</button>
+    </form>
+    <div id="status" class="status" aria-live="polite"></div>
+    <section id="weather" class="weather hidden">
+      <h2 id="location"></h2>
+      <p id="condition" class="condition"></p>
+      <div class="metrics">
+        <div class="card"><span class="label">Temperature</span><span id="temp" class="value"></span></div>
+        <div class="card"><span class="label">Feels like</span><span id="feels" class="value"></span></div>
+        <div class="card"><span class="label">Humidity</span><span id="humidity" class="value"></span></div>
+        <div class="card"><span class="label">Wind speed</span><span id="wind" class="value"></span></div>
+      </div>
+      <h3>5-day forecast</h3>
+      <div id="forecast" class="forecast"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
